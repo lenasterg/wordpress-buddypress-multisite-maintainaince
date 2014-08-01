@@ -7,6 +7,9 @@
     <body><?php
         require_once('wp-load.php') ;
 
+/**
+ * Goes through all blogs which are last updated <52 weeks and deletes the posts which are auto drafts or revisions or in trash.
+ * */
                function clean_useless_posts() {
             global $wpdb ;
             echo '<pre>' ;
